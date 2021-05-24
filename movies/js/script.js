@@ -4,7 +4,7 @@
         e.preventDefault();
         var query = $('#query').val();
         $.ajax({
-            url: 'https://api.themoviedb.org/3/search/movie?api_key=4ec327e462149c3710d63be84b81cf4f&language=pt-BR&page=1&query='+query,
+            url: 'filter.php?filterBy=name&query='+query,
             method: 'GET',
             dataType: 'json'
         }).done(function(resposta) {
@@ -21,7 +21,7 @@
         $('#genre').click(function(){
             var genre = $('#genres').val();
             $.ajax({
-                url: 'https://api.themoviedb.org/3/discover/movie?api_key=4ec327e462149c3710d63be84b81cf4f&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres='+genre,
+                url: 'filter.php?filterBy=genre&genreId='+genre,
                 method: 'GET',
                 dataType: 'json'
             }).done(function(resposta) {
