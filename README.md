@@ -1,2 +1,2 @@
 # Front-End
-Todos os arquivos estão na pasta movies, basta incluir na pasta raiz de seu servidor (por exemplo htdocs do Xampp) e acessar da raiz /movies.
+Todos os arquivos estão na pasta movies, basta incluir na pasta raiz de seu servidor (por exemplo htdocs do Xampp) e acessar da raiz /movies(Ex: 127.0.0.1/movies).
